@@ -1,0 +1,11 @@
+env/
+
+.vagrant/
+
+
+*/__pycache__/
+
+db*
+*.geany
+
+*.log
