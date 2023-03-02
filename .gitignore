@@ -2,10 +2,13 @@ env/
 
 .vagrant/
 
-
-*/__pycache__/
+__pycache__/
+*pyc
 
 db*
 *.geany
 
 *.log
+
+
+vagrant_folder/

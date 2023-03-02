@@ -1,0 +1,16 @@
+{% extends "teamlink/base.html" %}
+{% block title %}Teamlink{% endblock %}
+{% block content %}
+    <h1>Teamlink</h1>
+    {% for team_post in team_posts %}
+    <h2>
+        <a href="{% url 'teamlink:team_post_detail' team_post.id %}">
+            {{ team_post.title }}
+        </a>
+    </h2>
+    <p class="date">
+        Published {{ team_post.publish }} by {{team_post.author }}
+    </p>
+    {{ team_post.body|truncatewords:30|linebreaks }}
+    {% endfor %}
+{% endblock %}

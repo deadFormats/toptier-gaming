@@ -25,18 +25,20 @@ SECRET_KEY = 'django-insecure-0$c9w*%)+efof$qbqyak=lt*ylbvcnv#y8r^mkwbz6pnpopb^b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.56.10', '127.0.0.1', 'localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'teamlink.apps.TeamlinkConfig',
 ]
 
 MIDDLEWARE = [
